@@ -44,6 +44,8 @@ imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
 	save_prefix="image", save_format="jpg")
 
 # loop over examples from our image data augmentation generator
+printf("generating images");
+
 for image in imageGen:
 	# increment our counter
 	total += 1
